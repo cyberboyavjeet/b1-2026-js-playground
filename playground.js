@@ -49,3 +49,55 @@ function add(a,b)
             console.log(`doubled: ${doubled}`)
 
 
+            //destructuring in j-s
+            //Array data Structuring
+            const langauages=['javaScript','Python','C++']
+            //tp extract the specific elements from an array
+            const[first, second]=langauages
+            console.log(`first= ${first}, second= ${second}`)
+
+
+            //destructuring the object in javaScript
+
+
+            //object in javaScript
+            const studends={
+                name:'Avjeet',
+                course:'CSE',
+                year:2026
+            }
+            console.log(studends)
+
+            //destructuring
+            const { name,course}=studends
+            console.log(`Name= ${name}, Course= ${course}`)
+
+//Another Example of Dstructuring
+const colors=['RED','BLUE','BLACK']
+const[c1,c2,c3]=colors
+console.log(c1,c2,c3)
+
+//Skipping values 
+const marks=[90,80,55]
+const[,Scrience]=marks
+console.log(Scrience)
+
+//Default value in destruvting
+const score=[100]
+const [maths,science=0]=score
+console.log(maths,science)
+
+//Renaming varriable
+const user={
+    username:'cyberboyavjeet'
+
+}
+const {username:uname}=user
+console.log(uname)
+
+//Function parameter destructuring
+const printStudent=({sName,sRoll})=>{
+    console.log(sName,sRoll)
+}
+//calling Function
+printStudent({sName:'Avjeet', sRoll:07})
